@@ -1,0 +1,42 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio voor school IPMEDT2 - HSLeiden",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zowie93/portfolio.git"
+  },
+  "keywords": [
+    "hsleiden",
+    "portfolio",
+    "zowie",
+    "zowie",
+    "van",
+    "geest"
+  ],
+  "author": "Zowie van Geest",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zowie93/portfolio/issues"
+  },
+  "homepage": "https://github.com/zowie93/portfolio#readme",
+  "dependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-ignore": "^2.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9"
+  },
+  "optionalDependencies": {}
+}
