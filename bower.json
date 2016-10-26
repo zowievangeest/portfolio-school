@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "description": "Portfolio voor school IPMEDT2 - HSLeiden",
+  "main": "index.js",
+  "authors": [
+    "Zowie van Geest"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "hsleiden",
+    "portfolio",
+    "zowie",
+    "zowie",
+    "van",
+    "geest"
+  ],
+  "homepage": "https://github.com/zowie93/portfolio",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "Font-Awesome#^4.7.0",
+    "simple-line-icons": "^2.4.1",
+    "owl.carousel": "^2.2.0",
+    "jquery-smooth-scroll": "^2.0.1",
+    "lightbox2": "lightbox#^2.8.2"
+  }
+}
