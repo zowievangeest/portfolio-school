@@ -53,7 +53,8 @@ gulp.task('sass', function() {
 // $ gulp watch
 // gulp watcher use this one if you edit scss files within the scss folder
 gulp.task('watch', function (){
-    gulp.watch('app/scss/**/*.scss', ['sass']);
+    gulp.watch('app/scss/**/*.scss', ['sass'], ['cssnano']);
+    gulp.watch('app/scss/style.scss', ['sass'], ['cssnano']);
     gulp.watch('app/css/style.css', ['cssnano']);
     gulp.watch('app/*.html');
     gulp.watch('app/js/**/*.js');
@@ -101,20 +102,14 @@ gulp.task('watch-bs', ['browserSync', 'watch', 'cssnano'], function (){ });
 gulp.task('scripts', function () {
     gulp.src([
         basePaths.dev + 'js/jquery/jquery.js',
-        basePaths.dev + 'js/bootstrap/js/bootstrap.js',
-        basePaths.dev + 'js/lightbox2/js/lightbox.js',
-        basePaths.dev + 'js/owl-carousel/owl.carousel.js',
-        basePaths.dev + 'js/owl-smoothscroll-for-websites/owl.SmoothScroll.js'
+        basePaths.dev + 'js/bootstrap/js/bootstrap.js'
     ])
     .pipe(concat('main.js'))
     .pipe(gulp.dest(basePaths.basedir + '/js/'));
 
     gulp.src([
         basePaths.dev + 'js/jquery/jquery.js',
-        basePaths.dev + 'js/bootstrap/js/bootstrap.js',
-        basePaths.dev + 'js/lightbox2/js/lightbox.js',
-        basePaths.dev + 'js/owl-carousel/owl.carousel.js',
-        basePaths.dev + 'js/owl-smoothscroll-for-websites/owl.SmoothScroll.js'
+        basePaths.dev + 'js/bootstrap/js/bootstrap.js'
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -131,15 +126,6 @@ gulp.task('copy-scripts', function () {
 
     gulp.src(basePaths.bower + 'bootstrap/dist/**/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js/bootstrap'));
-
-    gulp.src(basePaths.bower + 'smoothscroll-for-websites/*.js')
-        .pipe(gulp.dest(basePaths.dev + '/js/smoothscroll-for-websites'));
-
-    gulp.src(basePaths.bower + 'lightbox2/dist/**/*.js')
-        .pipe(gulp.dest(basePaths.dev + '/js/lightbox2'));
-
-    gulp.src(basePaths.bower + 'owl.carousel/dist/**/*.js')
-        .pipe(gulp.dest(basePaths.dev + '/js/owl-carousel'));
 });
 
 // Run:
@@ -153,12 +139,6 @@ gulp.task('copy-css', function () {
 
     gulp.src(basePaths.bower + 'font-awesome/css/*')
         .pipe(gulp.dest(basePaths.dev + '/css/font-awesome'));
-
-    gulp.src(basePaths.bower + 'lightbox2/dist/css/*')
-        .pipe(gulp.dest(basePaths.dev + '/css/lightbox2'));
-
-    gulp.src(basePaths.bower + 'owl.carousel/dist/**/*.css')
-        .pipe(gulp.dest(basePaths.dev + '/css/owl-carousel'));
 
     gulp.src(basePaths.bower + 'simple-line-icons/css/*.css')
         .pipe(gulp.dest(basePaths.dev + '/css/simple-line-icons'));
@@ -181,20 +161,7 @@ gulp.task('copy-fonts', function () {
 });
 
 // Run:
-// $ gulp copy-fonts
-// If you downloaded new files with bower be sure to run this task first and include the correct script path
-// Copy assets from bower dir to src dir
-gulp.task('copy-images', function () {
-
-    gulp.src(basePaths.bower + 'lightbox2/dist/images/*')
-        .pipe(gulp.dest(basePaths.dev + '/images/lightbox2'));
-
-    gulp.src(basePaths.bower + 'owl.carousel/dist/**/*.png')
-        .pipe(gulp.dest(basePaths.dev + '/images/owl-carousel'));
-});
-
-// Run:
-// $ gulp copy-fonts
+// $ gulp copy-assets
 // If you downloaded new files with bower be sure to run this task first and include the correct script path
 // Copy assets from bower dir to src dir
 gulp.task('copy-assets', function () {
@@ -207,15 +174,16 @@ gulp.task('copy-assets', function () {
         .pipe(rename({ extname: ".scss" }))
         .pipe(gulp.dest(basePaths.basedir + '/scss/font-awesome/'));
 
-    gulp.src(basePaths.dev + 'css/owl-carousel/assets/owl.carousel.css')
-        .pipe(rename({ extname: ".scss" }))
-        .pipe(gulp.dest(basePaths.basedir + '/scss/owl-carousel/'));
-
-    gulp.src(basePaths.dev + 'css/owl-carousel/assets/owl.theme.default.css')
-        .pipe(rename({ extname: ".scss" }))
-        .pipe(gulp.dest(basePaths.basedir + '/scss/owl-carousel/'));
-
     gulp.src(basePaths.dev + 'css/simple-line-icons/simple-line-icons.css')
         .pipe(rename({ extname: ".scss" }))
         .pipe(gulp.dest(basePaths.basedir + '/scss/simple-line-icons/'));
+
+    gulp.src(basePaths.dev + 'fonts/bootstrap/*')
+        .pipe(gulp.dest(basePaths.basedir + '/fonts/'));
+
+    gulp.src(basePaths.dev + 'fonts/font-awesome/*')
+        .pipe(gulp.dest(basePaths.basedir + '/fonts/'));
+
+    gulp.src(basePaths.dev + 'fonts/simple-line-icons/*')
+        .pipe(gulp.dest(basePaths.basedir + '/fonts/'));
 });
