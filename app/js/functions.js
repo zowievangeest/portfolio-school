@@ -76,6 +76,21 @@
     }
 
 
+
+    $('[data-toggle="modal"]').on('click', function (e) {
+       $('.portfolio-box-caption').hide();
+    });
+
+    $('[data-dismiss="modal"]').on('click', function () {
+        $('.portfolio-box-caption').show();
+    });
+
+
+    AOS.init({
+        disable: window.innerWidth < 1024
+    });
+
+
 }());
 
 

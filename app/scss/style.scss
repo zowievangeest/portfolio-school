@@ -202,11 +202,11 @@ p {
 
 #home {
   width: 100%;
-  min-height: 680px;
+  min-height: 100vh;
   background: url("../img/hero-img.jpg")no-repeat;
   background-position: top center;
   background-size: cover;
-  padding-top: 21%;
+  padding-top: 450px;
   text-align: center;
 }
 #home h3 {
@@ -263,6 +263,11 @@ p {
   line-height: 26px;
   padding-right: 20px;
 }
+
+.super-script {
+  font-size: 12px;
+}
+
 .abt-feature{
   padding-top: 5%;
 }
@@ -532,7 +537,7 @@ footer p {
 #back-to-top {
   position: fixed;
   bottom: 13px;
-  right: 30px;
+  right: 15px;
   width: 40px;
   height: 40px;
   border-radius: 50%;

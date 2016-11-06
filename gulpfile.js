@@ -102,14 +102,16 @@ gulp.task('watch-bs', ['browserSync', 'watch', 'cssnano'], function (){ });
 gulp.task('scripts', function () {
     gulp.src([
         basePaths.dev + 'js/jquery/jquery.js',
-        basePaths.dev + 'js/bootstrap/js/bootstrap.js'
+        basePaths.dev + 'js/bootstrap/js/bootstrap.js',
+        basePaths.dev + 'js/aos/aos.js'
     ])
     .pipe(concat('main.js'))
     .pipe(gulp.dest(basePaths.basedir + '/js/'));
 
     gulp.src([
         basePaths.dev + 'js/jquery/jquery.js',
-        basePaths.dev + 'js/bootstrap/js/bootstrap.js'
+        basePaths.dev + 'js/bootstrap/js/bootstrap.js',
+        basePaths.dev + 'js/aos/aos.js'
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -126,6 +128,9 @@ gulp.task('copy-scripts', function () {
 
     gulp.src(basePaths.bower + 'bootstrap/dist/**/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js/bootstrap'));
+
+    gulp.src(basePaths.bower + 'aos/dist/**/*.js')
+        .pipe(gulp.dest(basePaths.dev + '/js/aos'));
 });
 
 // Run:
@@ -142,6 +147,9 @@ gulp.task('copy-css', function () {
 
     gulp.src(basePaths.bower + 'simple-line-icons/css/*.css')
         .pipe(gulp.dest(basePaths.dev + '/css/simple-line-icons'));
+
+    gulp.src(basePaths.bower + 'aos/dist/*.css')
+        .pipe(gulp.dest(basePaths.dev + '/css/aos'));
 });
 
 // Run:
@@ -169,6 +177,10 @@ gulp.task('copy-assets', function () {
     gulp.src(basePaths.dev + 'css/bootstrap/bootstrap.css')
         .pipe(rename({ extname: ".scss" }))
         .pipe(gulp.dest(basePaths.basedir + '/scss/bootstrap/'));
+
+    gulp.src(basePaths.dev + 'css/aos/aos.css')
+        .pipe(rename({ extname: ".scss" }))
+        .pipe(gulp.dest(basePaths.basedir + '/scss/aos/'));
 
     gulp.src(basePaths.dev + 'css/font-awesome/font-awesome.css')
         .pipe(rename({ extname: ".scss" }))

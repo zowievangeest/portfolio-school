@@ -77,9 +77,9 @@
                 <div class="col-xs-12 hidden-lg abt-feature mb-50">
                     <img src="img/zowie-van-geest.jpg" class="img-responsive center-block">
                 </div>
-                <div class="col-md-7 about-desc">
+                <div class="col-md-7 about-desc" data-aos="fade-right">
                     <h3>Over Zowie</h3>
-                    <h2>Student Hogeschool Leiden | 2de jaars.</h2>
+                    <h2>Student Hogeschool Leiden | 2<sup class="super-script">de</sup> jaars.</h2>
                     <p>Mijn naam is Zowie van Geest en ik ben tweedejaars student mediatechnologie aan de Hogeschool Leiden.</p>
                     <p>
                         Al sinds 2012 houd ik mij met veel plezier bezig met webdevelopment, webdesign, desktoppublishing en van alles wat daarbij komt kijken.
@@ -87,7 +87,7 @@
                     </p>
                 </div>
 
-                <div class="col-md-5 hidden-md hidden-sm hidden-xs abt-feature">
+                <div class="col-md-5 hidden-md hidden-sm hidden-xs abt-feature" data-aos="fade-left">
                     <img src="img/zowie-van-geest.jpg" class="img-responsive pull-right">
                 </div>
 
@@ -106,7 +106,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up-right" data-aos-offset="300" data-aos-duration="500">
                     <div class="ervaring-box">
                         <div class="ervaring-icon">
                             <i class="icon-screen-desktop"></i>
@@ -117,7 +117,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-offset="300" data-aos-duration="500">
                     <div class="ervaring-box">
                         <div class="ervaring-icon">
                             <i class="icon-chemistry"></i>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up-left" data-aos-offset="300" data-aos-duration="500">
                     <div class="ervaring-box">
                         <div class="ervaring-icon">
                             <i class="icon-book-open"></i>
@@ -146,7 +146,6 @@
 </section>
 <!--END - ERVARINGEN-->
 
-
 <!--START - PORTFOLIO-->
 <section id="portfolio">
     <h3 class="section-title">portfolio</h3>
@@ -154,9 +153,9 @@
     <div class="work-content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-12 no-padding">
+                <div class="col-sm-6 no-padding" data-aos="zoom-in-up">
                     <a id="modalTriggerApple" class="portfolio-box" data-toggle="modal" data-target="#modalApple">
-                        <img src="img/port-apple.png" class="img-responsive" alt="1">
+                        <img id="port-apple" src="img/port-apple.png" class="img-responsive" alt="1">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -169,7 +168,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-12 no-padding">
+                <div class="col-sm-6 no-padding" data-aos="zoom-in-up">
                     <a id="modalTriggerBakker"  class="portfolio-box" data-toggle="modal" data-target="#modalBakker">
                         <img src="img/port-bakker.png" class="img-responsive" alt="2">
                         <div class="portfolio-box-caption">
@@ -184,7 +183,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-12 no-padding">
+                <div class="col-sm-6 no-padding" data-aos="zoom-in-up">
                     <a id="modalTriggerAH"  class="portfolio-box" data-toggle="modal" data-target="#modalAH">
                         <img src="img/port-ah.png" class="img-responsive" alt="3">
                         <div class="portfolio-box-caption">
@@ -194,6 +193,21 @@
                                 </div>
                                 <div class="project-name">
                                     AH Augmented reality
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 no-padding" data-aos="zoom-in-up">
+                    <a id="modalTriggerPecha"  class="portfolio-box" data-toggle="modal" data-target="#modalPecha">
+                        <img src="img/port-pecha.png" class="img-responsive" alt="3">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Opdracht 4
+                                </div>
+                                <div class="project-name">
+                                    Pecha Kucha
                                 </div>
                             </div>
                         </div>
@@ -217,23 +231,72 @@
                                     <div class="col-xs-12">
                                         <h3 class="modal-text-title">Opdracht 1 - Apple Idrive</h3>
                                         <p>
+                                            Voor deze opdracht was het de bedoeling dat we een advertentie aan de hand
+                                            van de stijl van Apple gingen ontwerpen. <br><br>
+                                            <span class="title">Onderzoek:</span><br>
+                                            Voordat ik begon met het ontwerp heb ik vooral veel research gedaan op
+                                            Google en heb ik gekeken hoe Apple dit met zijn advertenties aanpakt. Ik
+                                            kwam erachter dat Apple vooral ontwerpen maakt aan de hand van “Less is
+                                            more” dit betekent dat veel teksten en meerdere afbeeldingen niet altijd
+                                            goed hoeft te zijn. Met dit perspectief ben ik begonnen met het onderzoeken
+                                            welke fonts er gebruikt werden en wat voor soort foto’s er gebruikt werden
+                                            voor het maken voor de ontwerpen. Het font dat Apple gebruikt tegenwoordig
+                                            is: San Francisco. Deze was te downloaden als je een Apple Developer account
+                                            had.<br><br>
+
+                                            <span class="title">Lettertype:</span><br>
+                                            Als lettertype gebruik ik het font San Francisco. Deze wissel ik af met
+                                            verschillende tekstgrootte en font dikte. Zo heb ik voor het logo en de
+                                            tekst Apple Idrive eronder gekozen voor een bold variant van San Francisco.
+                                            Dit een stukje kleiner is dan de slogan van de Apple Idrive. De slogan heb
+                                            ik in regular gezet en een stuk groter dan de rest. De release datum heb ik
+                                            klein gehouden om de mensen nieuwsgierig te houden en als ze geïnteresseerd
+                                            zijn dan zouden ze dieper op de advertentie ingaan.<br><br>
+
+                                            <span class="title">Kleur:</span><br>
+                                            Ik heb voor mijn ontwerp een lichtgrijze achtergrond gebruikt omdat dit rust
+                                            een strakheid uitstraalt. Grijs staat bekend dat het vertrouwelijk overkomt.
+                                            De kleur grijs roept op zich geen emoties op en kan daardoor heel goed met
+                                            andere kleuren gecombineerd worden. Grijs is een tijdloze kleur. Natuurlijk
+                                            heb ik het niet egaal grijs gemaakt maar zit er een kleine verloop in van
+                                            licht grijs. Voor alle teksten en logo's heb ik de kleur Zwart gebruikt.
+                                            Deze kleur is normaliter geen echte kleur maar straalt toch een chique
+                                            karakter uit.<br><br>
+
+                                            <span class="title">Uitstraling:</span><br>
+                                            Als afbeelding heb ik een auto geknipt in Photoshop en zelf een Apple logo
+                                            erop geshopt. De auto heb ik gecentreerd en onderaan de pagina gezet. De
+                                            teksten zelf heb ik ook alleen in het midden uit laten lijnen. Als kleur heb
+                                            ik zwart gekozen omdat die er lekker uitspringt op een grijze
+                                            achtergrond.<br><br>
+
+                                            <h3 class="modal-text-title">Peer review</h3>
+
                                             <span class="title">Maarten Paauw:</span><br><br>
-                                            Hierbij geef ik mijn 2-peer review op bovenstaande advertentie. In mijn review
-                                            richt ik mij op de onderwerpen kleur, ordening en typografie. Per onderwerp geef
-                                            ik een beoordeling. Ook geef ik een beoordeling op het totaal. Voor wat betreft
+                                            Hierbij geef ik mijn 2-peer review op bovenstaande advertentie. In mijn
+                                            review
+                                            richt ik mij op de onderwerpen kleur, ordening en typografie. Per onderwerp
+                                            geef
+                                            ik een beoordeling. Ook geef ik een beoordeling op het totaal. Voor wat
+                                            betreft
                                             het onderwerp kleur vind ik het een geslaagde advertentie. Er zitten weinig
                                             kleuren in, precies hoe Apple het zelf zou doen. De advertentie is hiermee
-                                            herkenbaar en opvallend. Ik geef hiervoor een 8. Vervolgens gekeken op ordening
+                                            herkenbaar en opvallend. Ik geef hiervoor een 8. Vervolgens gekeken op
+                                            ordening
                                             is dit ook perfect voor elkaar. Ik zie dat “The rule of thirds” goed is
-                                            toegepast. De auto neem ⅔ van de advertentie in beslag en valt daarom goed op
-                                            maar komt wel rustig over. Ook voor dit onderdeel geef ik een 8. De typografie
+                                            toegepast. De auto neem ⅔ van de advertentie in beslag en valt daarom goed
+                                            op
+                                            maar komt wel rustig over. Ook voor dit onderdeel geef ik een 8. De
+                                            typografie
                                             tot slot zit ook goed in elkaar. Als we kijken naar de volgorde van
                                             tekstelementen is het een goede opbouw. Als je snel naar de tekst zou kijken
                                             valt als eerste de tekst Apple iDrive op, dit doordat het een dikgedrukt
-                                            lettertype is. Vervolgens valt de quote op omdat het net wat groter is en daarna
+                                            lettertype is. Vervolgens valt de quote op omdat het net wat groter is en
+                                            daarna
                                             komt de rest van de tekst door. Ook is de keuze van de familie van het
                                             lettertype goed gemaakt. Het gaat hier om een schreefloos lettertype. Dit
-                                            gebruikt Apple zelf ook. Ik geef hier ook een 8 voor en dat betekent dat ik als
+                                            gebruikt Apple zelf ook. Ik geef hier ook een 8 voor en dat betekent dat ik
+                                            als
                                             gemiddeld voor de complete advertentie een 8 geef. Het ziet er keurig uit!
                                         </p>
                                     </div>
@@ -262,6 +325,38 @@
                                     <div class="col-xs-12">
                                         <h3 class="modal-text-title">Opdracht 2 - Lunchroom Bakker</h3>
                                         <p>
+                                            Voor deze opdracht was het de bedoeling dat we een beginscherm gingen
+                                            ontwerpen voor lucnhroom Bakker aan de hand van de Google Material Design
+                                            guides. <br><br>
+                                            <span class="title">Onderzoek:</span><br>
+                                            Voordat ik begon met het ontwerpen voor lunchroom Bakker heb ik eerst de
+                                            Google Material Design guidelines doorgekeken wat hier nou precies mee
+                                            bedoeld werd. Ik kwam erachter dat Google zelf veel objecten en kleuren
+                                            schema’s als standaard gemaakt heb voor ontwerpers. <br><br>
+
+                                            <span class="title">Lettertype:</span><br>
+                                            Voordat ik begon met het ontwerpen voor lunchroom Bakker heb ik eerst de
+                                            Google Material Design guidelines doorgekeken wat hier nou precies mee
+                                            bedoeld werd. Ik kwam erachter dat Google zelf veel objecten en kleuren
+                                            schema’s als standaard gemaakt heb voor ontwerpers. <br><br>
+
+                                            <span class="title">Kleur:</span><br>
+                                            Als kleur heb ik oranje gekozen omdat deze kleur bekend staat voor het
+                                            opweken van etenslust en dat is bij een lunchroom natuurlijk wel zo handig.
+                                            Ik heb ook een composite color gebruikt voor het toevoegen van een
+                                            bestelling namelijk de kleur blauw. Een kleur die rust brengt en een frisse
+                                            uitstraling geeft, ze is beschermend en vreedzaam. Aan de andere kant kan
+                                            blauw ook een koude kleur genoemd worden, ze is technisch, formeel en
+                                            zakelijk.<br><br>
+
+                                            <span class="title">Uitstraling:</span><br>
+                                            Ik heb voor mezelf alle elementen die ik wilde gebruiken nagemaakt in
+                                            Illustrator en hier ook de juiste kleuren op toegepast. Nadat alle elementen
+                                            los gemaakt waren heb ik ze samengevoegd volgens de guide lines en heb ik
+                                            ook de juiste shadows en grotes inverwerkt. <br><br>
+
+                                            <h3 class="modal-text-title">Peer review</h3>
+
                                             <span class="title">Maarten Paauw:</span><br><br>
                                             Hierbij geef ik mijn 2-peer review op bovenstaande landingspagina van een
                                             android applicatie. In mijn review richt ik mij op de onderwerpen kleur,
@@ -307,6 +402,45 @@
                                     <div class="col-xs-12">
                                         <h3 class="modal-text-title">Opdracht 3 - AH Augmented</h3>
                                         <p>
+                                            Voor deze opdracht was het de bedoeling dat we een Augmented reality app
+                                            ontwerp moesten maken voor de AH. De app zal moeten worden gebruikt om
+                                            mensen in de winkel wegwijs te maken naar bepaalde gekozen producten..
+                                            <br><br>
+                                            <span class="title">Onderzoek:</span><br>
+                                            Voordat ik begon met het ontwerpen voor AH augmented app heb ik eerst de AH
+                                            site zelf doorgekeken en heb ik online ook even de folders doorgebladerd.
+                                            Wat mij opviel is dat ze veel gebruik maken van de primaire kleuren blauw,
+                                            oranje en geel. Omdat Augmented relatief nieuw is binnen de ontwerp
+                                            industrie was het best lastig om een goed een beeld te krijgen wat andere
+                                            ontwerpers voor ideeën hebben. Na een tijdje Google, Dribbble had ik een
+                                            mooie inspiratie gevonden van augmented reality. Op deze basis ben ik verder
+                                            gegaan.<br><br>
+
+                                            <span class="title">Lettertype:</span><br>
+                                            Als lettertype heb ik Myriad Pro gebruikt omdat die een veelvoorkomend
+                                            lettertypes is binnen de ontwerp industrie en ik deze ook erg vond passen
+                                            bij het thema. Het is namelijk een schreefloos lettertype en vind je daarom
+                                            ook vaak terug in reclamefolders van de AH. Voor de titels van de producten
+                                            heb ik een bold uitstraling gekozen omdat de producten dan meer opvallen.
+                                            Voor de uitleg van de producten gebruik ik een kleinere fontgrootte en
+                                            regular. De bonus prijzen heb ik groot gemaakt zodat deze lekker opvallen en
+                                            eerder aantrekken tot het kopen van een product. <br><br>
+
+                                            <span class="title">Kleur:</span><br>
+                                            De kleuren blauw en oranje staan centraal bij de AH. De kleur blauw heb ik
+                                            gekozen voor de achtergrond en de kleur oranje heb ik gekozen voor de bonus
+                                            elementen binnen de website. In combinatie heb ik blauw en wit gebruikt
+                                            omdat dit een vrij rustige uitstraling geeft. De kleur blauw ademt rust
+                                            kalmte en koelheid uit. <br><br>
+
+                                            <span class="title">Uitstraling:</span><br>
+                                            Ik ben begonnen met het binnenhalen van de logo’s en foto’s. Voor de foto
+                                            heb ik een gangpad gekozen van de AH zelf omdat je hierdoor veel keuze hebt
+                                            om je augmented reality kaders te plaatsen. Het logo heb ik omgezet in witte
+                                            outlines zodat het mooi paste binnen het blauwe kader. <br><br>
+
+                                            <h3 class="modal-text-title">Peer review</h3>
+
                                             <span class="title">Maarten Paauw:</span><br><br>
                                             Hierbij geef ik mijn 2-peer review op bovenstaande overlay voor een camera
                                             applicatie. In mijn review richt ik mij op de onderwerpen kleur, ordening en
@@ -335,6 +469,75 @@
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="modalPecha" tabindex="-1" role="dialog" aria-labelledby="myModalLabelPecha">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabelPecha">Opdracht 4 - Pecha Kucha</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3 class="modal-text-title">Opdracht 4 - Pecha Kucha Massimo Vignelli</h3>
+                                        <p>
+                                            <span class="title">Slide 1:</span><br><br>
+                                            Mijn Pecha Kucha gaat over Massimo Vignelli. Hier zie je de een foto van
+                                            deze ontwerper. Allereerst ga ik iets vertellen over zijn achtergrond en
+                                            leven. Daarna ga ik laten zien wat deze man zoals voor de ontwerpindustrie
+                                            betekend heeft. Vervolgens zal ik het een en ander vertellen over deze
+                                            ontwerper. Tot slot geef ik mijn persoonlijke mening en laat ik nog een
+                                            stukje geschiedenis zien.<br><br>
+
+                                            <span class="title">Slide 2:</span><br><br>
+                                            Massimo Vignelli is geboren in 1931 in Millaan maar maakte zijn carrière in
+                                            de VS. Hij is geliefd omdat hij grafisch Amerika modern maakte. Dit kwam
+                                            door zijn focus op eenvoud en herkenbare geometrische vormen in zijn werk.
+                                            Hij was niet alleen een ontwerper die voornamelijk merken ontwierp, maar
+                                            legde zich on andere ook toe op meubelontwerp en glaskunst. Hij heeft helaas
+                                            het loodje gelegd in Mei 2014, hij is 83 jaar oud geworden. <br><br>
+
+                                            <span class="title">Slide 3:</span><br><br>
+                                            Hier zie je 1 van zijn bekendste werken namelijk de New York metromap. Dit
+                                            ontwerp is revolutionaire voor die tijd het was namelijk gemaakt in de jaren
+                                            70. Veel mensen hadden een gedeelde mening de ene vond het prachtig en de
+                                            andere was er totaal geen fan van. Ook hier zie je weer het terugkomen van
+                                            eenvoud en herkenbare geometrische vormen, alle metros zijn onderscheiden
+                                            door middel van verschillende kleuren lijnen en bolletjes voor stations.<br><br>
+
+                                            <span class="title">Slide 4:</span><br><br>
+                                            Vignelli was niet alleen een ontwerper maar hij was ook een oprichter van
+                                            het ontwerpbureau Unimark International die in 1964 is opgericht. Het
+                                            bedrijf specialiseerde zich in het opstellen van merkidentiteiten en maakten
+                                            onder andere ford en IBM groot dankzij tijdloos design. Het meeste bekende
+                                            werk is deze van de American Airlines het logo is van de hand van Vignelli
+                                            zelf. gecreëerd in 1967 en in 2013 ging het op de schop. Het recente logo
+                                            werd tevens niet zo goed ontvangen.<br><br>
+
+                                            <span class="title">Slide 5:</span><br><br>
+                                            In 1971 Startte hij samen met zijn vrouw Lella Valle “Vignelli Associates”.
+                                            Het bedrijf was gespecialliseerd in merkidentiteiten en vestigde zich in de
+                                            wereld van verpakkingen en meubel / interieurontwerp. Het bloomingdale logo
+                                            en de brown bag komen je misschien bekend voor. Het bijzondere is dat de
+                                            logos in 3 formaten ontworpen zijn.<br><br>
+
+                                            <span class="title">Slide 6:</span><br><br>
+                                            Persoonlijk vind ik dat zijn stijl van ontwerpen echt mooi omdat alles strak
+                                            is en herkenbaar en vrij minimalistisch. Wat ik ook bijzonder vind is dat je
+                                            zijn stijl van ontwerpen alle daags nog steeds terug vind in tijdschriften
+                                            en posters. Een kenmerk van zijn goede smaak voor design heeft zich bewezen
+                                            met het maken van de American Airlines logo. Mocht je interesse hebben dan
+                                            moet je zeker even zijn film kijken.<br><br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Sluit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -350,7 +553,7 @@
         <div class="contact-content">
             <div class="row">
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right">
 
                     <div class="contact-desc">
                         <p><i class="fa-icon-1 fa fa-male"></i>Zowie van Geest</p>
@@ -370,7 +573,7 @@
 
                 </div>
 
-                <div class="col-md-7 col-md-offset-1">
+                <div class="col-md-7 col-md-offset-1" data-aos="fade-left">
                     <form action="" method="post" id="contact-form">
                         <fieldset>
                             <div class="form-group form-group-fullname">
