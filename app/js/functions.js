@@ -76,6 +76,9 @@
     }
 
 
+    /*====================================
+     Enalbe Modal on Mobile
+     ======================================*/
 
     $('[data-toggle="modal"]').on('click', function (e) {
        $('.portfolio-box-caption').hide();
@@ -84,6 +87,11 @@
     $('[data-dismiss="modal"]').on('click', function () {
         $('.portfolio-box-caption').show();
     });
+
+
+    /*====================================
+     Initializing AOS
+     ======================================*/
 
 
     AOS.init({
